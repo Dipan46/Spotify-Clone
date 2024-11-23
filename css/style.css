@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.left {
+    width: 23vw;
+    height: 95vh;
+    margin: 1rem 0.3rem 1rem 0.5rem;
+    border-radius: 8px;
+    flex-direction: column;
+}
+
+.home {
+    background-color: #121212;
+    border-radius: 8px;
+    margin: 0 0 0.2rem 0;
+}
+
+.home ul li {
+    list-style: none;
+    width: 2vw;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+
+.libreary {
+    background-color: #121212;
+    min-height: 68vh;
+    border-radius: 8px;
+    margin: 0.2rem 0 0 0;
+    position: relative;
+}
+
+.libreary h1 {
+    padding: 1rem;
+    color: gray;
+}
+
+.heading img {
+    width: 2vw;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 11px;
+    gap: 15px;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer a {
+    color: gray;
+}
+
+.right {
+    width: 77vw;
+    height: 95vh;
+    margin: 1rem 0.5rem 1rem 0.3rem;
+    border-radius: 8px;
+    background-color: #121212;
+}

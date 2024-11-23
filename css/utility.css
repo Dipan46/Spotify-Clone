@@ -1,0 +1,15 @@
+.border {
+    border: 2px solid white;
+}
+
+.flex{
+    display: flex;
+}
+
+.just-cent{
+    justify-content: center;
+}
+
+.ali-cent {
+    align-items: center;
+}
