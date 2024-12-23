@@ -12,6 +12,10 @@ body {
     overflow: hidden;
 }
 
+ul {
+    list-style: none;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -46,17 +50,15 @@ body {
 
 .home ul li {
     display: flex;
-    list-style: none;
     width: 2vw;
     padding: 1rem;
     gap: 1rem;
 }
 
-
 .libreary {
     background-color: #121212;
-    min-height: 52vh;
-    height: 52vh;
+    min-height: 59vh;
+    height: 59vh;
     border-radius: 8px;
     margin: 0.2rem 0 0 0;
     position: relative;
@@ -67,10 +69,47 @@ body {
     color: gray;
 }
 
+.heading {
+    display: flex;
+}
+
 .heading img {
     width: 2vw;
     padding: 1rem;
     gap: 1rem;
+}
+
+
+.songList {
+    padding: 0 1rem;
+    margin: 0.1rem 0;
+    min-height: 0vh;
+    height: 39vh;
+    overflow-y: auto;
+}
+
+.songinfo {
+    display: flex;
+    gap: 1rem;
+}
+
+.songList ul li {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    cursor: pointer;
+    padding: 6px 0;
+    font-size: 0.8rem;
+    font-weight: 300;
+    padding-right: 1rem;
+}
+
+.libplay {
+    width: 1.5rem;
+}
+
+.libplay:hover {
+    opacity: 50%;
 }
 
 .footer {
@@ -78,7 +117,7 @@ body {
     flex-wrap: wrap;
     font-size: 11px;
     gap: 15px;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     position: absolute;
     bottom: 0;
 }
@@ -110,7 +149,7 @@ body {
     gap: 1rem;
 }
 
-.login{
+.login {
     font-weight: 700;
     background: white;
     border: none;
@@ -119,11 +158,11 @@ body {
     padding: 1rem 2rem;
 }
 
-.login:hover{
+.login:hover {
     scale: 1.05;
 }
 
-.signup{
+.signup {
     font-weight: 700;
     background: none;
     border: none;
@@ -131,7 +170,7 @@ body {
     font-size: 1rem;
 }
 
-.signup:hover{
+.signup:hover {
     scale: 1.05;
 }
 
@@ -181,11 +220,42 @@ body {
     right: 20px;
 }
 
-.playbar{
+.playbar {
     position: absolute;
-    bottom: 0;
     background-color: black;
-    width: 100%;
+    width: 100vw;
     height: 8vh;
-    padding: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#pp {
+    min-width: 2rem;
+    max-width: 2rem;
+}
+
+.song-btn {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.playPause {
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.playPause div {
+    margin: 0.5rem;
+}
+
+.seekbar {
+    height: 2px;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid gray;
+    cursor: pointer;
 }

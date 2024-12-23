@@ -25,10 +25,15 @@
                 </ul>
             </div>
             <div class="libreary">
-                <div class="heading flex">
+                <div class="heading">
                     <img src="img/playlist.svg" alt="home" srcset="">
                     <h1>Your Libreary</h1>
                 </div>
+
+                <div class="songList">
+                    <ul></ul>
+                </div>
+
                 <footer class="footer">
                     <div>
                         <a href="https://www.spotify.com/in-en/legal/">
@@ -388,10 +393,18 @@
     </section>
     <section id="playbar">
         <div class="playbar">
-            <div class="song-btn">
-                <img src="img/prevsong.svg" alt="" srcset="">
-                <img src="img/play_white.svg" alt="" srcset="">
-                <img src="img/nextsong.svg" alt="" srcset="">
+            <div class="song-info">
+            </div>
+            <div class="playPause">
+                <input type="range" id="seekbar" value="0" step="0.1" max="100" class="seekbar">
+                <div class="song-btn">
+                    <img id="prv" src="img/prevsong.svg" alt="" srcset="">
+                    <img id="pp" src="img/play_white.svg" alt="" srcset="">
+                    <img id="nxt" src="img/nextsong.svg" alt="" srcset="">
+                </div>
+            </div>
+            <div class="song-time">
+                00:00/00:00
             </div>
         </div>
     </section>
