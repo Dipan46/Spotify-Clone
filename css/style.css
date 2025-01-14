@@ -131,7 +131,7 @@ ul {
 .right {
     position: relative;
     width: 77vw;
-    min-height: 85.2vh;
+    min-height: 82.2vh;
     height: 80vh;
     margin: 1rem 0.5rem 1rem 0.3rem;
     border-radius: 8px;
@@ -259,6 +259,12 @@ ul {
     margin: 0.5rem;
 }
 
+.seek {
+    margin: 0 auto;
+    width: 80vw;
+    margin-bottom: 3px;
+}
+
 .seekbar {
     height: 2px;
     width: 100%;
@@ -346,6 +352,11 @@ ul {
         justify-content: center;
         align-items: center;
         font-size: 13px;
+    }
+    .song-info,
+    .song-time {
+        width: 100%;
+        text-align: center;
     }
 
     .playPause {
