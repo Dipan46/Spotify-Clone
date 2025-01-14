@@ -91,15 +91,27 @@ async function main() {
         const totalSeconds = Math.floor(currentSong.duration % 60);
         const formattedDuration = `${totalMinutes < 10 ? '0' : ''}${totalMinutes}:${totalSeconds < 10 ? '0' : ''}${totalSeconds}`;
 
-
-
         document.querySelector(".song-time").innerHTML = formattedCurrentTime + "/" + formattedDuration;
+
+        // Update the seekbar
+        const seekbar = document.getElementById('seekbar');
+        const progress = (currentSong.currentTime / currentSong.duration) * 100;
+        seekbar.value = progress; // Update the slider position
     });
 
     document.getElementById('seekbar').addEventListener('input', (e) => {
         const seekbar = e.target;
-        const newTime = (seekbar.value / 100) * currentSong.duration;
-        currentSong.currentTime = newTime;
+        const newTime = (seekbar.value / 100) * currentSong.duration; // Calculate new time based on slider value
+        currentSong.currentTime = newTime; // Update audio's current time
+    });
+
+    // Add Hamburger listner
+    document.querySelector(".hamb").addEventListener("click", () => {
+        document.querySelector(".left").style.left = "0";
+    });
+    // Add Close listner
+    document.querySelector(".clo").addEventListener("click", () => {
+        document.querySelector(".left").style.left = "-100%";
     });
 }
 
