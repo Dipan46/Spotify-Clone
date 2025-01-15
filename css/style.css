@@ -228,9 +228,6 @@ ul {
     right: 20px;
 }
 
-#playbar {
-
-}
 
 .playbar {
     background-color: black;
@@ -350,6 +347,11 @@ ul {
 
     .heading img {
         width: 4.5vw;
+    }
+
+    #playbar {
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .playbar {
