@@ -44,6 +44,12 @@ ul {
     flex-direction: column;
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .clo {
     display: none;
 }
@@ -188,7 +194,7 @@ ul {
 .cardContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -300,11 +306,6 @@ ul {
         box-shadow: 5px 3px 20px 0px #000000;
     }
 
-    .clo {
-        display: block;
-        margin: 0rem 0rem 0.5rem 0.5rem;
-    }
-
     .left {
         background: rgba(0, 0, 0, 0.5);
         backdrop-filter: blur(10px);
@@ -320,11 +321,25 @@ ul {
 
     .right {
         width: 100vw;
+        margin: 0;
+    }
+
+    .head {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 6px 20px 0px #000000;
+    }
+
+    .clo {
+        display: block;
+        margin: 1rem;
     }
 
     .hamb {
         display: inline;
-        z-index: 11;
     }
 }
 
@@ -347,10 +362,6 @@ ul {
     .song-info {
         min-width: 0;
     }
-
-    .clo {
-        margin: 1rem;
-    }
 }
 
 @media (max-width: 500px) {
@@ -358,6 +369,10 @@ ul {
         width: 100vw;
         height: 100vh;
         margin: 0;
+    }
+
+    .footer {
+        margin-top: 2rem;
     }
 
     .right {

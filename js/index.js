@@ -174,10 +174,14 @@ async function main() {
     // Menu toggle for mobile view
     document.querySelector(".hamb").addEventListener("click", () => {
         document.querySelector(".left").style.left = "0";
+        document.querySelector(".hamb").style.display = "none";
+        document.querySelector(".head").style.zIndex = "-1";
     });
 
     document.querySelector(".clo").addEventListener("click", () => {
         document.querySelector(".left").style.left = "-100%";
+        document.querySelector(".hamb").style.display = "inline";
+        document.querySelector(".head").style.zIndex = "1";
     });
 }
 
