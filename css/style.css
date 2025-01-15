@@ -61,14 +61,14 @@ ul {
     gap: 1rem;
 }
 
-.libreary {
+.library {
     background-color: #121212;
     border-radius: 8px;
     margin: 0.2rem 0 0 0;
     position: relative;
 }
 
-.libreary h1 {
+.library h1 {
     padding: 1rem;
     color: gray;
 }
@@ -185,10 +185,10 @@ ul {
     padding: 1rem;
 }
 
-.card-container {
+.cardContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     gap: 1rem;
 }
 
@@ -198,10 +198,24 @@ ul {
     padding: 1rem;
     border-radius: 5px;
     position: relative;
+
+    .play {
+        opacity: 0;
+        bottom: 70px;
+        scale: 0.8;
+    }
 }
 
 .card:hover {
     background-color: #1f1f1f;
+
+    .play {
+        cursor: pointer;
+        opacity: 100%;
+        bottom: 77px;
+        scale: 1;
+        transition-duration: 0.1s;
+    }
 }
 
 .card h2 {
@@ -224,19 +238,21 @@ ul {
 
 .play {
     position: absolute;
-    bottom: 77px;
     right: 20px;
 }
 
-#plabar{
+#plabar {
     width: 100vw;
 }
 
 .playbar {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
     align-items: center;
 }
+
+
 
 #pp {
     min-width: 2rem;
@@ -291,7 +307,6 @@ ul {
 
     .left {
         background: rgba(0, 0, 0, 0.5);
-        /* Fallback for browsers that do not support backdrop-filter */
         backdrop-filter: blur(10px);
     }
 
@@ -299,7 +314,7 @@ ul {
         background-color: transparent;
     }
 
-    .libreary {
+    .library {
         background-color: transparent;
     }
 
@@ -329,6 +344,10 @@ ul {
         align-items: center;
     }
 
+    .song-info {
+        min-width: 0;
+    }
+
     .clo {
         margin: 1rem;
     }
@@ -354,15 +373,18 @@ ul {
         width: 4.5vw;
     }
 
+    .cardContainer {
+        justify-content: space-around;
+    }
+
     #playbar {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
-   }
+    }
 
     .playbar {
-        justify-content: center;
-        align-items: center;
+        padding: 0 1rem;
         font-size: 13px;
     }
 
