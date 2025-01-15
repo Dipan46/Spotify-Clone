@@ -228,13 +228,13 @@ ul {
     right: 20px;
 }
 
+#plabar{
+    width: 100vw;
+}
 
 .playbar {
-    background-color: black;
-    width: 100vw;
-    height: 8vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -341,7 +341,8 @@ ul {
         margin: 0;
     }
 
-    .right{
+    .right {
+        background-color: black;
         min-height: 77.2vh;
     }
 
@@ -356,9 +357,8 @@ ul {
     #playbar {
         display: flex;
         flex-direction: column-reverse;
-        position: sticky;
-        bottom: 3rem;
-    }
+        justify-content: center;
+   }
 
     .playbar {
         justify-content: center;
