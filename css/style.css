@@ -348,11 +348,17 @@ ul {
         width: 4.5vw;
     }
 
+    #playbar {
+        position: sticky;
+        bottom: 0rem;
+    }
+
     .playbar {
         justify-content: center;
         align-items: center;
         font-size: 13px;
     }
+
     .song-info,
     .song-time {
         width: 100%;
