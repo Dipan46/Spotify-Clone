@@ -356,7 +356,7 @@ ul {
     #playbar {
         display: flex;
         flex-direction: column-reverse;
-        position: static;
+        position: sticky;
         bottom: 3rem;
     }
 
