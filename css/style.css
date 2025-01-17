@@ -194,7 +194,7 @@ ul {
 .cardContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
 }
 
@@ -324,6 +324,10 @@ ul {
     .right {
         width: 100vw;
         margin: 0;
+    }
+
+    .cardContainer {
+        justify-content: center;
     }
 
     .head {
