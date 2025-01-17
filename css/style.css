@@ -309,6 +309,8 @@ ul {
     .left {
         background: rgba(0, 0, 0, 0.5);
         backdrop-filter: blur(10px);
+        transition: ease-in-out;
+        transition-duration: 0.3s;
     }
 
     .home {
