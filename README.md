@@ -36,7 +36,7 @@ This project is a simple Spotify-like music player built with HTML, CSS, and Jav
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/spotify-clone.git
+   git clone https://github.com/Dipan46/Spotify-Clone.git
    ```
 2. Navigate to the project folder:
    ```sh
