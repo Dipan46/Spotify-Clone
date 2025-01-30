@@ -46,7 +46,7 @@ This project is a simple Spotify-like music player built with HTML, CSS, and Jav
    ```sh
    python -m http.server 5500
    ```
-4. Open `http://127.0.0.1:5500/index.html` in your browser.
+4. Open `http://xxx.0.0.1:5500/index.html` in your browser.
 
 ## How It Works
 
